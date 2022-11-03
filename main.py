@@ -19,7 +19,8 @@ def index():
         if lib.request.form['submit_button'] == 'LOGIN':
             var_login = lib.request.form['login']
             var_pass = lib.request.form['password']
-            if var_login == 'TOROSYANKK' and var_pass == '1':
+            # For debug, need change code below
+            if var_login == 'YOUR_USER' and var_pass == 'YOUR_PASS':
                 return lib.render_template('index.html')
             else:
                 return 'Ошибка входа!'
