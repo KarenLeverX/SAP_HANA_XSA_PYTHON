@@ -1,0 +1,47 @@
+<style>
+   body {
+    height:100%;
+    width:100%;
+}
+   #body_div {
+    height:100%;
+    width:100%;
+    background-color: #e6ffff;
+    position: fixed;
+    }
+
+   #div_button {
+    width:100%;
+    height:5%;
+    background-color:  #cceeff;
+   }
+  .Header_Button {
+  --color: 240, 240, 240;
+  margin: auto;
+  border: 1px solid green;
+  }
+  .Header_Button:hover {
+    background-color:#e6f2ff;
+}
+.select_buttons{
+  margin: auto;
+  width:100%;
+ }
+#Working-area {
+  display : none ;
+   width:100%;
+   hight:30%;}
+
+.Working-button {
+   width:30%;
+   hight:30%;
+   background: linear-gradient(to top left, #33ccff 0%, #66ffff 20%);
+   border-radius: 15%;
+   }
+
+.inputs {
+  text-align: left;
+  margin-top: 10%;
+  margin-left: 30px;
+}
+</style>

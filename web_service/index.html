@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/web_service/my_css.css">
+    <meta charset="UTF-8">
+    <title>LeverX API Service</title>
+    <script type="text/javascript">
+    function click_but(id) {
+    var  targetDiv = document.getElementById(id);
+      if (targetDiv.style.display == "none" || targetDiv.style.display == '') {
+        targetDiv.style.display = "block";
+      } else {
+        targetDiv.style.display = "none";
+      }
+    };
+  </script>
+</head>
+<body>
+<div id="body_div" >
+    <div id="div_button" style="display: flex; justify-content: flex-end" >
+        <button  class="Header_Button" type= "button"
+                 name="submit_button" value="SELECT_FULL"
+                 onclick="click_but('Working-area');"> Insert HIST
+        </button>
+        <button  class="Header_Button" type="button"
+                 name="submit_button" value="SELECT_DELTA"> Insert Delta
+        </button>
+     </div>
+    <div id="Working-area">
+        <div id="Window_select" class="Working-button">
+        <h2> My wizard full loading</h2>
+        <form method="POST" class = 'form_full_wizart' >
+            <label>Stock name</label>
+            <input name="Stock" >
+            <p></p>
+            <label>Batch size</label>
+            <input name="Batch" type = "number" VALUE="1000">
+            <button   type="submit"
+                      name="button_run"
+                      value="run_full"> Run
+        </button>
+       </form>
+        </div>
+
+    <div id="Window_delete" class="Working-button">
+        <h2> My wizard delete</h2>
+        <form method="POST" class = 'form_full_wizart' >
+            <label>Stock name</label>
+            <input name="Stock_delete" >
+            <p></p>
+            <label>Delete all</label>
+            <input name="delete_all" type = "checkbox" >
+            <button   type="submit"
+                      name="button_run"
+                      value="run_delete"> Run
+        </button>
+       </form>
+    </div>
+
+    <div id="Window_maindata" class="Working-button">
+        <h2> Main data for Stocks </h2>
+        <form method="POST" class = 'form_full_wizart' >
+            <button   type="submit"
+                      name="button_run"
+                      value="run_insertmain"> Start
+        </button>
+       </form>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>
